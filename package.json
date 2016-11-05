@@ -1,0 +1,41 @@
+{
+  "name": "nock-hook",
+  "description": "Convinient wrapper around Nock for HTTP testing",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint '*.js' 'test/**/*.js'",
+    "precommit": "npm run lint && npm test",
+    "test": "npm run test:ava && npm run test:mocha",
+    "test:ava": "ava test/*.ava.js",
+    "test:mocha": "mocha test/mocha"
+  },
+  "engines": {
+    "node": ">=4.0"
+  },
+  "keywords": [
+    "tests", "nock", "replay"
+  ],
+  "dependencies": {
+    "nock": "^9.0.2"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "ava": "^0.16.0",
+    "babel-eslint": "^6.0.0",
+    "eslint": "^3.0.0",
+    "got": "^6.6.1",
+    "husky": "^0.11.6",
+    "mocha": "^3.1.2"
+  },
+  "author": "ewnd9 <ewndnine@gmail.com>",
+  "files": [
+    "index.js",
+    "ava.js"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewnd9/nock-hook.git"
+  }
+}
