@@ -6,7 +6,7 @@ Convinient wrapper around [Nock](https://github.com/node-nock/nock) for HTTP tes
 
 ## Install
 
-```
+```sh
 $ npm install nock-hook --save-dev
 ```
 
@@ -15,8 +15,10 @@ $ npm install nock-hook --save-dev
 ### `mocha`
 
 ```js
+'use strict';
+
 const assert = require('assert');
-const nockHook = require('nock-helper');
+const nockHook = require('nock-hook');
 
 const got = require('got');
 
@@ -48,7 +50,7 @@ describe('nock-hook', function() {
 
 ```js
 import test from 'ava';
-import nockHook from 'nock-helper';
+import nockHook from 'nock-hook';
 
 import got from 'got';
 
@@ -72,7 +74,7 @@ test.serial('test', async t => {
 
 ```js
 import test from 'ava';
-import nockHook from 'nock-helper/ava';
+import nockHook from 'nock-hook/ava';
 
 import got from 'got';
 
