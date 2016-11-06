@@ -1,7 +1,7 @@
 {
   "name": "nock-hook",
   "description": "Convinient wrapper around Nock for HTTP testing",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "lint": "eslint '*.js' 'test/**/*.js'",
@@ -14,7 +14,9 @@
     "node": ">=4.0"
   },
   "keywords": [
-    "tests", "nock", "replay"
+    "tests",
+    "nock",
+    "replay"
   ],
   "dependencies": {
     "nock": "^9.0.2"
